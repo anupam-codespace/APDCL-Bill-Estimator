@@ -38,10 +38,22 @@ With rising electricity costs and a growing focus on sustainability, this projec
 
 ## 📂 Resources
 
-- 📄 [Final Report (PDF)](https://drive.google.com/your-report-link)  
-- 📁 [Dataset & Appliance Data](https://drive.google.com/your-dataset-link)  
-- 🔗 [API Documentation (Swagger/Postman)](https://api-docs-link.com)  
-- 🧪 [Screenshots & UI Workflow](./screenshots/)  
-- 📘 [GitHub Wiki](https://github.com/anupamcodes/APDCL-Bill-Estimator/wiki) will be updated.
+Here are some important project resources for further reference and documentation:
+
+- 📄 **[Final Report (PDF)](https://www.canva.com/design/DAGswQG9J_g/O494F3haorVV7L50X5Bk3g/edit?utm_content=DAGswQG9J_g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**  
+  A detailed project report covering system overview, design, implementation, testing, and conclusions.
+
+- 📁 **[Dataset & Appliance Data](https://drive.google.com/drive/folders/1uXy7RMLot1gAgSu9f5bnhOxWncePTZLt?usp=drive_link)**  
+  The data used to calculate energy consumption, star rating multipliers, and billing.
+
+- 🔗 **[API Documentation](https://docs.google.com/document/d/19nXrLsOMYPLpT0FIQsVjXQTa-bmQLKnzz80IqhKjS2s/edit?usp=sharing)**  
+  Explains all available endpoints, request/response formats, and integration details.
+
+- 🧪 **[Screenshots & UI Workflow](https://drive.google.com/drive/folders/1uXy7RMLot1gAgSu9f5bnhOxWncePTZLt?usp=drive_link)**  
+  Visual walkthrough of the app, including UI wireframes and key screens.
+
+- 📘 **[GitHub Wiki](https://github.com/anupamcodes/APDCL-Bill-Estimator/wiki)** *(coming soon)*  
+  Additional guides, project structure breakdown, and developer resources.
+
 
 ---
