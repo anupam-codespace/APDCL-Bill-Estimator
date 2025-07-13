@@ -40,7 +40,7 @@ With rising electricity costs and a growing focus on sustainability, this projec
 
 Here are some important project resources for further reference and documentation:
 
-- 📄 **[Final Report (PDF)](https://www.canva.com/design/DAGswQG9J_g/O494F3haorVV7L50X5Bk3g/edit?utm_content=DAGswQG9J_g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**  
+- 📄 **[Final Report (PDF)]((https://drive.google.com/file/d/1M6Xdj3C5xZCDE7A6NNoS4lquOIw1lh3b/view?usp=drive_link))**  
   A detailed project report covering system overview, design, implementation, testing, and conclusions.
 
 - 📁 **[Dataset & Appliance Data](https://drive.google.com/drive/folders/1uXy7RMLot1gAgSu9f5bnhOxWncePTZLt?usp=drive_link)**  
