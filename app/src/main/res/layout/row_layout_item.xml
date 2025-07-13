@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/appliance_item_bg"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp"
+    android:clipToPadding="false">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/appliance_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="12dp"
+        android:padding="4dp"/>
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/appliance_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="chutiya"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/unbounded_regular" />
+
+    <!-- Minus -->
+    <ImageButton
+        android:id="@+id/minus_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_minus"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"/>
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/appliance_quantity"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="07"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/unbounded_regular" />
+
+    <!-- Plus -->
+    <ImageButton
+        android:id="@+id/plus_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_plus"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white" />
+
+
+    <!-- 🗑️ Delete Icon inside box -->
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_delete"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="8dp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

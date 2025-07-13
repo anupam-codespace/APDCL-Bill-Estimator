@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD6C4"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:padding="4dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Bill"
+            android:textSize="29sp"
+            android:fontFamily="@font/unbounded_bold"
+            android:textColor="#180166"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimate Your Power Bill Instantly"
+            android:textSize="11sp"
+            android:fontFamily="@font/unbounded_semibold"
+            android:textColor="#180166" />
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_white_box"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Appliance Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/unbounded_medium"
+                android:text="Select Appliance"
+                android:textColor="#180166" />
+
+            <Spinner
+                android:id="@+id/spinnerAppliance"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/spinner_background"
+                android:fontFamily="@font/unbounded_medium"
+                android:padding="8dp" />
+
+            <!-- Rating Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/unbounded_medium"
+                android:text="Select Energy / Star Rating"
+                android:textColor="#180166" />
+
+            <Spinner
+                android:id="@+id/spinnerRating"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/spinner_background"
+                android:fontFamily="@font/unbounded_medium"
+                android:padding="8dp" />
+
+            <!-- Month Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/unbounded_medium"
+                android:text="Select Month"
+                android:textColor="#180166" />
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/spinner_background"
+                android:fontFamily="@font/unbounded_medium"
+                android:padding="8dp" />
+
+            <!-- Quantity -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/unbounded_medium"
+                android:text="Quantity"
+                android:textColor="#180166" />
+
+            <EditText
+                android:id="@+id/inputQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/spinner_background"
+                android:hint="Nos. of appliances"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#180166"
+                    android:fontFamily="@font/unbounded_medium"
+                    android:text="ADD"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnDone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF6600"
+                    android:fontFamily="@font/unbounded_medium"
+                    android:text="DONE"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <!-- Appliances Selected Button -->
+        <Button
+            android:id="@+id/btnAppliancesSelected"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF5800"
+            android:text="Appliances Selected"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/unbounded_medium"
+           />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD3BA"> <!-- FrameLayout now holds background color -->
+
+    <!-- Decorative Ellipse Background View -->
+    <View
+        android:id="@+id/ellipse_5"
+        android:layout_width="476dp"
+        android:layout_height="484dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="-136dp"
+        android:layout_marginStart="-32dp"
+        android:background="@drawable/ellipse_background" /> <!-- Temporarily red to verify it's visible -->
+
+    <!-- Scrollable Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"> <!-- Make ScrollView transparent -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- About Title -->
+            <TextView
+                android:id="@+id/aboutTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#23005A"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/unbounded_semibold"/>
+
+            <!-- About Description -->
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This app helps you estimate your monthly electricity bill by calculating the energy consumed by your home appliances. Just select an appliance, enter how many you use and the app will do the rest! It’s a simple way to track your power usage and manage your electricity expenses better."
+                android:textAlignment="center"
+                android:textColor="#23005A"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/unbounded_semibold"/>
+
+            <!-- Container for Dropdown -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@android:color/white"
+                android:backgroundTintMode="src_in"
+                android:background="@drawable/rounded_container"
+                android:clipToPadding="false"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Select Consumer Category"
+                    android:textColor="#23005A"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/unbounded_semibold"/>
+
+                <Spinner
+                    android:id="@+id/consumerCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_background"
+                    android:padding="8dp"
+                    android:spinnerMode="dropdown"
+                    android:fontFamily="@font/unbounded_semibold"/>
+            </LinearLayout>
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:textAllCaps="true"
+                android:backgroundTint="#23005A"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="1dp"
+                android:paddingVertical="12dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/unbounded_semibold"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD3BC">
+
+    <!-- Back Icon -->
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="30dp"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Bill"
+        android:textColor="#180166"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/unbounded_semibold" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimate Your Power Bill Instantly"
+        android:textColor="#180166"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/unbounded_regular" />
+
+    <!-- Appliance Card -->
+    <ScrollView
+        android:id="@+id/card_scroll"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/calculate_button">
+
+        <LinearLayout
+            android:id="@+id/appliance_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_box_white"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:id="@+id/preview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preview"
+                android:textSize="22sp"
+                android:textColor="#180166"
+                android:layout_gravity="center"
+                android:fontFamily="@font/unbounded_regular"
+                android:paddingBottom="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="Calculate"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/unbounded_regular"
+        android:backgroundTint="#FF5200"
+        android:stateListAnimator="@null"
+        android:elevation="4dp"/>
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Largest Wave Circle -->
+
+
+    <!-- Large -->
+    <ImageView
+        android:id="@+id/bgCircleLarge"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle_bg"
+        android:scaleType="fitCenter" />
+
+    <!-- Medium -->
+    <ImageView
+        android:id="@+id/bgCircleMid"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle_bg3"
+        android:scaleType="fitCenter" />
+
+    <!-- Small -->
+    <ImageView
+        android:id="@+id/bgCircleSmall"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle_bg2"
+        android:scaleType="fitCenter" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_logo"
+        android:scaleType="fitCenter" />
+
+    <!-- Bottom -->
+    <LinearLayout
+        android:id="@+id/finalSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/finalImage"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/apdcl_logo"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:contentDescription="APDCL Logo" />
+
+        <TextView
+            android:id="@+id/apdclText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APDCL"
+            android:textColor="#180166"
+            android:textSize="23sp"
+            android:fontFamily="@font/unbounded_semibold"
+            android:layout_marginStart="8dp"
+            android:includeFontPadding="false"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+</RelativeLayout>

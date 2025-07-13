@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD8C2">
+
+    <!-- Fixed Header: Arrow + Title -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="0dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:padding="4dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textSize="32sp"
+            android:fontFamily="@font/unbounded_semibold"
+            android:textStyle="bold"
+            android:textColor="#180166"
+            android:gravity="center"
+            android:layout_marginBottom="0dp" />
+    </LinearLayout>
+
+    <!-- Scrollable Tips Content -->
+    <ScrollView
+        android:id="@+id/scrollTips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Tips Container -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="@drawable/rounded_card"
+                android:elevation="4dp">
+
+                <!-- Energy Saving Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💡 Energy-Saving Tips"
+                    android:fontFamily="@font/unbounded_semibold"
+                    android:textSize="18sp"
+                    android:textColor="#180166"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Energy Tips -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Turn off appliances when not in use.\n\n2. Use LED bulbs instead of incandescent or CFL lights.\n\n3. Use energy-efficient appliances with a high star rating (BEE-rated).\n\n4. Set your AC at 22–26°C for optimal cooling and power efficiency.\n\n5. Avoid frequent opening of refrigerators and defrost regularly."
+                    android:fontFamily="@font/unbounded_regular"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp" />
+
+                <!-- Spacer -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <!-- Safety Tips Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ Electrical Safety Tips"
+                    android:fontFamily="@font/unbounded_semibold"
+                    android:textSize="18sp"
+                    android:textColor="#180166"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Safety Tips -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Never touch electrical appliances with wet hands.\n\n2. Do not overload sockets—use proper-rated extensions.\n\n3. Use proper earthing for all major appliances.\n\n4. Regularly check for damaged wires or plugs and replace them promptly.\n\n5. Install RCCB/ELCB (residual current circuit breaker) for shock protection."
+                    android:fontFamily="@font/unbounded_regular"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp" />
+                <!-- Spacer -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <!-- APDCL & MyBijulee Tips Header -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📲 General Awareness"
+                    android:fontFamily="@font/unbounded_semibold"
+                    android:textSize="20sp"
+                    android:textColor="#180166"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- APDCL Tips Body -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Use the MyBijulee app to view/pay bills and monitor usage.\n\n2. Check your billing cycle and always save payment receipts.\n\n3. Report high usage, outages, or faults via the app or 1912 helpline.\n\n4. Always verify APDCL staff ID before granting access to meter/work.\n\n5. Beware of fraud: APDCL never asks for payment on personal numbers.\n\n6. Apply for new connections or updates online via MyBijulee hassle-free."
+                    android:fontFamily="@font/unbounded_regular"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD3BA">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/top_background_curve">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/unbounded_bold"
+            android:text="COMPARISON"
+            android:textColor="#180166"
+            android:textSize="29sp" />
+
+        <TextView
+            android:id="@+id/descText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/unbounded_regular"
+            android:paddingHorizontal="50dp"
+            android:text="Compare appliance energy use by rating. Save power. Cut your bill."
+            android:textAlignment="center"
+            android:textColor="#180166"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <!-- Content Area -->
+    <ScrollView
+        android:layout_below="@id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Appliance Selection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_whie_box2"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Appliance"
+                    android:textColor="#180166"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/unbounded_semibold"
+                    android:layout_marginBottom="10dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerAppliance"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/spinner_background_comparison"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Rating Select -->
+            <LinearLayout
+                android:id="@+id/ratingCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@drawable/rounded_whie_box2"
+                android:elevation="6dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Rating"
+                    android:textColor="#180166"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/unbounded_semibold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/spinnerRating1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/spinner_background_comparison"
+                        android:padding="8dp" />
+
+                    <Spinner
+                        android:id="@+id/spinnerRating2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="45dp"
+                        android:background="@drawable/spinner_background_comparison"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/compareBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="COMPARE"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/unbounded_semibold"
+                    android:backgroundTint="#180166" />
+            </LinearLayout>
+
+            <!-- Comparison Result -->
+            <LinearLayout
+                android:id="@+id/comparisonResultBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_whie_box2"
+                android:padding="20dp"
+                android:elevation="6dp">
+
+                <TextView
+                    android:id="@+id/comparisonTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Energy Consumption Comparison"
+                    android:textColor="#180166"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/unbounded_bold"
+                    android:layout_marginBottom="16dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

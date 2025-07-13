@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD6C4"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:padding="15dp"/>
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="APDCL Logo"
+            android:src="@drawable/apdcl_logo" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/subtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/unbounded_bold"
+            android:text="APDCL"
+            android:textColor="#180166"
+            android:textSize="15sp"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/subtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/unbounded_semibold"
+            android:textColor="#180166"
+            android:text="Energy Consumption Calculate"
+            android:textSize="13sp"
+            android:layout_marginTop="0dp" />
+
+        <!-- Button 1: Calculate Bill -->
+        <LinearLayout
+            android:id="@+id/btnCalculateBill"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_card">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_calculator"
+                android:contentDescription="Calculator Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate Bill"
+                android:fontFamily="@font/unbounded_semibold"
+                android:textColor="#180166"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Button 2: Charges -->
+        <LinearLayout
+            android:id="@+id/btnCharges"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:gravity="center"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_charge"
+                android:contentDescription="Charges Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comparison"
+                android:fontFamily="@font/unbounded_semibold"
+                android:textColor="#180166"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Button 3: Tips -->
+        <LinearLayout
+            android:id="@+id/btnTips"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:gravity="center"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="40dp"
+                android:contentDescription="Tips Icon"
+                android:src="@drawable/ic_tips" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tips"
+                android:fontFamily="@font/unbounded_semibold"
+                android:textColor="#180166"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Button 4: APDCL Website -->
+        <LinearLayout
+            android:id="@+id/btnWebsite"
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card"
+            android:gravity="center"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_web"
+                android:contentDescription="Website Icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APDCL Website"
+                android:fontFamily="@font/unbounded_semibold"
+                android:textColor="#180166"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
