@@ -33,3 +33,15 @@ With rising electricity costs and a growing focus on sustainability, this projec
 - Real-time energy usage and billing estimation
 - Visual bar graph for energy comparison between ratings
 - Responsive UI with animated transitions
+  
+---
+
+## 📂 Resources
+
+- 📄 [Final Report (PDF)](https://drive.google.com/your-report-link)  
+- 📁 [Dataset & Appliance Data](https://drive.google.com/your-dataset-link)  
+- 🔗 [API Documentation (Swagger/Postman)](https://api-docs-link.com)  
+- 🧪 [Screenshots & UI Workflow](./screenshots/)  
+- 📘 [GitHub Wiki](https://github.com/anupamcodes/APDCL-Bill-Estimator/wiki) will be updated.
+
+---
